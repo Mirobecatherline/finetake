@@ -4,6 +4,7 @@ import Aboutvideo from '../../../components/Aboutvideo';
 import Posts from '../../../components/Posts';
 import Toppicture from '../../../components/Toppicture';
 import Topvideo from '../../../components/Topvideo';
+import Navbar from '../../../components/Navbar';
 
 import React from 'react';
 
@@ -21,7 +22,7 @@ function Page() {
   return (
     <main className="bg-[#333333] min-h-screen">
       {/* Navigation Bar */}
-     
+     <Navbar/>
 
       {/* About Video */}
       <div className="w-full   mx-auto border-t border-b border-gray-300 bg-white   ">

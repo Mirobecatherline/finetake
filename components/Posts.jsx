@@ -192,6 +192,34 @@ function Posts() {
           "https://res.cloudinary.com/dacpiss4b/image/upload/v1736940688/WhatsApp_Billede_20236e_eifddl.jpg",
         caption: "just after sunset 🌞",
       },
+
+      {
+        id: 21,
+        username: "Vera m",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148450/DSC_0819_upmccf.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148451/DSC_0653_inypoe.jpg",
+        caption: "Such a cute and innocent expression! Absolutely adorable! ☺️",
+      },
+
+      {
+        id: 22,
+        username: "Muli sicily",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148451/DSC_0684_fkgdhj.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148451/DSC_0688_dnkkfo.jpg",
+        caption: "Golden hour magic with a smile to match. ✨🌄",
+      },
+
+      {
+        id: 23,
+        username: "Brendah",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148450/DSC_0876_crsknw.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148451/DSC_0651_mynmvn.jpg",
+        caption: "Tiny but mighty in charm, even as the sun sets. 👶✨",
+      },
+  
   
 
 
