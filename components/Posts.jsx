@@ -16,11 +16,11 @@ function Posts() {
       },
       {
         id: 2,
-        username: "Diego Walis",
-        userImageUrl: "https://th.bing.com/th/id/OIP._AsnysdT8NQRhAvIIrbAXgHaDo?w=315&h=180&c=7&r=0&o=5&pid=1.7",
+        username: "Dorean",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737280379/DSC_0283_kgowfp.jpg",
         imageUrl:
-          "https://bloximages.chicago2.vip.townnews.com/napavalleyregister.com/content/tncms/assets/v3/editorial/7/0d/70dfe1ec-b9fc-11ec-b138-533fe875fb1c/6254d04f01a71.image.jpg",
-        caption: "with the spirit of trying something new",
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737280379/DSC_0305_xop9id.jpg",
+        caption: "A timeless moment captured in depth ☺️",
       },
 
 
@@ -219,6 +219,74 @@ function Posts() {
           "https://res.cloudinary.com/dacpiss4b/image/upload/v1737148451/DSC_0651_mynmvn.jpg",
         caption: "Tiny but mighty in charm, even as the sun sets. 👶✨",
       },
+
+  
+      {
+        id: 24,
+        username: "Natasha",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737279060/DSC_0649_rl0kq8.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737279060/DSC_0650_qrgusm.jpg",
+        caption: "An exquisite portrait that captures the essence of nighttime elegance💖",
+      },
+
+      {
+        id: 25,
+        username: "Pricillah",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737280741/DSC_0623_abwta9.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737280741/DSC_0342_eewlej.jpg",
+        caption: "A dreamy combination of beauty and nature 🥰",
+      },
+
+      {
+        id: 26,
+        username: "Duncan",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737281608/DSC_0155_cxjcr2.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1737281607/DSC_0152_hexd1v.jpg",
+        caption: "Keeping it sharp, no matter the time 🕶️",
+      },
+
+      {
+        id: 27,
+        username: "Baloli",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282156/DSC_0134_e774xo.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282156/DSC_0132_dfvnes.jpg",
+        caption: "Silent moves, loud impact 🔥",
+      },
+
+      {
+        id: 28,
+        username: "John security",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282276/DSC_0227_zqg9hr.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282276/DSC_0220_egzuhe.jpg",
+        caption: "Just out here doing my thing ✌️",
+      },
+
+      {
+        id: 29,
+        username: "caren",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282533/DSC_0724_s5ifqm.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282535/DSC_0397_vb4dqj.jpg",
+        caption: "Nature and me—a perfect match 🌸",
+      },
+
+      {
+        id: 30,
+        username: "Joel security",
+        userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282395/DSC_0248_h6duwx.jpg",
+        imageUrl:
+          "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282395/DSC_0254_ce5is6.jpg",
+        caption: "Stay low-key, keep it real 🖤",
+      },
+
+
+  
+  
   
   
 
