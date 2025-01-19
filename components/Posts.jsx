@@ -268,7 +268,7 @@ function Posts() {
 
       {
         id: 29,
-        username: "caren",
+        username: "caren w",
         userImageUrl: "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282533/DSC_0724_s5ifqm.jpg",
         imageUrl:
           "https://res.cloudinary.com/dacpiss4b/image/upload/v1737282535/DSC_0397_vb4dqj.jpg",
