@@ -34,7 +34,7 @@ function Signup() {
             <div className="space-y-6">
               <div>
                 <label className="text-gray-600 text-sm mb-2 block">Name</label>
-                <div className="relative flex items-center">
+                g <div className="relative flex items-center">
                   <input
                     name="name"
                     type="text"
