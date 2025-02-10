@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Aboutvideo from '../../../components/Aboutvideo';
-import Posts from '../../../components/Posts';
-import Toppicture from '../../../components/Toppicture';
-import Topvideo from '../../../components/Topvideo';
-import Navbar from '../../../components/Navbar';
+import Aboutvideo from '../../../components/home/Aboutvideo';
+import Posts from '../../../components/home/Posts';
+import Toppicture from '../../../components/home/Toppicture';
+import Topvideo from '../../../components/home/Topvideo';
+import Navbar from '../../../components/home/Navbar';
 
 import React from 'react';
 
