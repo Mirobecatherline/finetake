@@ -432,7 +432,7 @@ const Sidenav = () => {
     }
    
     // Send the files to the API using fetch
-    fetch('http://127.0.0.1:3000/images', {
+    fetch('/api/images', {
       method: 'POST',
       body: formData  
     })
@@ -576,7 +576,7 @@ const handleMarkAsEdited = (photo) => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:3000/images/user_images", {
+        const response = await fetch("/api/images/user_images", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({uid: adminuid}),

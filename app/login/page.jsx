@@ -245,7 +245,7 @@ function Login() {
       }),
     };
     
-    fetch("http://127.0.0.1:3000/users/register", configuration)
+    fetch("/api/users/register", configuration)
       .then((res) => {
         if (res.ok) {
           return res.json().then((data) => {
