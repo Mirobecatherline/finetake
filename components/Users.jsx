@@ -18,12 +18,28 @@ const Users = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [allUsers, setAllUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentuser, setCurrentuser] = useState(null);
+  const [adminId, setAdminId] = useState(null);
   //   const [selectedFilter, setSelectedFilter] = useState("all");
   const [selectedFilter, setSelectedFilter] = useState("client");
   const USERS_PER_PAGE = 10;
 
-  const currentuser = JSON.parse(localStorage.getItem("user"));
-  const adminId = currentuser.id;
+//   const currentuser = JSON.parse(localStorage.getItem("user"));
+//   const adminId = currentuser.id;
+
+  
+  useEffect(() => {
+    try {
+      const userFromStorage = localStorage.getItem("user");
+      if (userFromStorage) {
+        const parsedUser = JSON.parse(userFromStorage);
+        setCurrentuser(parsedUser);
+        setAdminId(parsedUser.id);
+      }
+    } catch (error) {
+      console.error("Error accessing localStorage:", error);
+    }
+  }, []);
 
   useEffect(() => {
     const fetchUsers = async () => {
