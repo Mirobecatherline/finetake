@@ -498,42 +498,6 @@ const handleMarkAsEdited = (photo) => {
   }
 };
 
-  // // Handle assigning photo to a client
-  // const handleAssignPhoto = (id) => {
-  //   if (!assignClientId.trim()) {
-  //     setComment("Please enter a valid Client ID");
-  //     return;
-  //   }
-    
-  //   fetch(`http://127.0.0.1:3000/images/${id}/assign`, {
-  //     method: "PATCH",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ uid: adminuid, client_id: assignClientId }),
-  //   })
-  //   .then(async (response) => {
-  //     if (response.ok) {
-  //       const data = await response.json();
-  //       setEditedPhotos((prev) =>
-  //         prev.map((photo) =>
-  //           photo.id === id ? { ...photo, assigned_to: data.assigned_to } : photo
-  //         )
-  //       );
-  //       setComment(`Photo assigned to client ${assignClientId} successfully!`);
-  //       setIsAssigning(false);
-  //       setSelectedImageId(null);
-  //       setAssignClientId("");
-  //     } else {
-  //       setComment("Failed to assign photo. Please try again.");
-  //     }
-  //   })
-  //   .catch(error => {
-  //     console.error("Error assigning photo:", error);
-  //     setComment("Error assigning photo: " + error.message);
-  //   });
-  // };
-
-
-
   // Handle assigning photo to a client
   const handleAssignPhoto = (id) => {
     if (!assignClientId.trim()) {
@@ -541,36 +505,72 @@ const handleMarkAsEdited = (photo) => {
       return;
     }
     
-    // Find the photo in the edited photos array
-    const photoToAssign = editedPhotos.find(photo => photo.id === id);
-    
-    if (!photoToAssign) {
-      setComment("Photo not found");
-      return;
-    }
-    
-    // Update the photo's assigned_to property in state
-    setEditedPhotos(prev => 
-      prev.map(photo => 
-        photo.id === id 
-          ? { ...photo, assigned_to: assignClientId } 
-          : photo
-      )
-    );
-    
-    // Show success message
-    setComment(`Photo assigned to client ${assignClientId} successfully!`);
-    
-    // Close the assignment modal
-    setIsAssigning(false);
-    setSelectedImageId(null);
-    setAssignClientId("");
-    
-    // If this photo is currently selected in the view modal, update it there too
-    if (selectedImage && selectedImage.id === id) {
-      setSelectedImage({...selectedImage, assigned_to: assignClientId});
-    }
+    fetch(`http://127.0.0.1:3000/images/${id}/assign`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ uid: adminuid, client_id: assignClientId }),
+    })
+    .then(async (response) => {
+      if (response.ok) {
+        const data = await response.json();
+        setEditedPhotos((prev) =>
+          prev.map((photo) =>
+            photo.id === id ? { ...photo, assigned_to: data.assigned_to } : photo
+          )
+        );
+        setComment(`Photo assigned to client ${assignClientId} successfully!`);
+        setIsAssigning(false);
+        setSelectedImageId(null);
+        setAssignClientId("");
+      } else {
+        setComment("Failed to assign photo. Please try again.");
+      }
+    })
+    .catch(error => {
+      console.error("Error assigning photo:", error);
+      setComment("Error assigning photo: " + error.message);
+    });
   };
+
+
+
+  // // Handle assigning photo to a client
+  // const handleAssignPhoto = (id) => {
+  //   if (!assignClientId.trim()) {
+  //     setComment("Please enter a valid Client ID");
+  //     return;
+  //   }
+    
+  //   // Find the photo in the edited photos array
+  //   const photoToAssign = editedPhotos.find(photo => photo.id === id);
+    
+  //   if (!photoToAssign) {
+  //     setComment("Photo not found");
+  //     return;
+  //   }
+    
+  //   // Update the photo's assigned_to property in state
+  //   setEditedPhotos(prev => 
+  //     prev.map(photo => 
+  //       photo.id === id 
+  //         ? { ...photo, assigned_to: assignClientId } 
+  //         : photo
+  //     )
+  //   );
+    
+  //   // Show success message
+  //   setComment(`Photo assigned to client ${assignClientId} successfully!`);
+    
+  //   // Close the assignment modal
+  //   setIsAssigning(false);
+  //   setSelectedImageId(null);
+  //   setAssignClientId("");
+    
+  //   // If this photo is currently selected in the view modal, update it there too
+  //   if (selectedImage && selectedImage.id === id) {
+  //     setSelectedImage({...selectedImage, assigned_to: assignClientId});
+  //   }
+  // };
 
   // Fetch photographer's images
   useEffect(() => {
