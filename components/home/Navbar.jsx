@@ -51,7 +51,7 @@ const Navbar = () => {
               />
             </form>
 
-            <a href="/create-account" className="flex flex-row-reverse items-center space-x-1 hover:border-b-2 hover:border-b-black shadow-md-500">
+            <a href="/application/about" className="flex flex-row-reverse items-center space-x-1 hover:border-b-2 hover:border-b-black shadow-md-500">
               <FaCameraRetro className="h-5 w-5" />
               <span>Finetake</span>
             </a>

@@ -401,7 +401,7 @@ const Sidenav = () => {
     { name: "Mode", Link: "#", icon: MdDarkMode },
   ];
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [activeTab, setActiveTab] = useState("edited");
   const [imagesupload, setImagesupload] = useState([]);
