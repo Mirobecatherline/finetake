@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
     "target": "ES2017",
     "lib": [
       "dom",
@@ -28,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/ui/button.jsx", "components/ui/table.jsx", "lib/utils.js", "components/ui/input.jsx", "components/ui/dropdown-menu.jsx", "components/ui/checkbox.jsx"  ],
   "exclude": [
     "node_modules"
   ]

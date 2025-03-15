@@ -5,10 +5,13 @@ import { CiSearch } from 'react-icons/ci';
 import { FaCameraRetro } from 'react-icons/fa';
 import { IoNotifications } from "react-icons/io5";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; // Added AiOutlineClose for the hamberger open and close
+import { useAuth } from '../../app/context/AuthContext';
+ 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // this one is for managing visibility
   const [searchQuery, setSearchQuery] = useState(''); // this one is used to manage the search input value
+  
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -83,8 +86,10 @@ const Navbar = () => {
               Our Products
             </a>
 
-            <a href="/Sign-Up" className="hover:text-red-500 border-2 border-blue-500 bg-blue-100 px-4 py-2 rounded-md">
-              Sign Up
+            <a href="/login" className="hover:text-red-500 border-2 border-blue-500 bg-blue-100 px-4 py-2 rounded-md" >
+              <button >
+                sign In
+              </button>
             </a>
           </div>
         </div>
@@ -93,9 +98,6 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-black shadow-md text-white py-10 space-y-4">
-          <a href="/Sign-Up" className="block px-4 border-2 border-white-500 bg-blue-400 py-1 rounded-md hover:text-red-500 w-fit ml-4" onClick={() => setIsMenuOpen(false)}>
-            Sign Up
-          </a>
           <a href="/products" className="block px-4 hover:text-red-500" onClick={() => setIsMenuOpen(false)}>
             Our Products
           </a>
