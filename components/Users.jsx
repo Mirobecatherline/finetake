@@ -45,7 +45,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch("http://127.0.0.1:3000/users", {
+        const response = await fetch("/api/users", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
