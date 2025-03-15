@@ -211,7 +211,7 @@ const Loggedinusers = () => {
     const fetchUsers = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch("http://127.0.0.1:3000/users", {
+        const response = await fetch("/api/users", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
@@ -230,7 +230,7 @@ const Loggedinusers = () => {
   const handleChangeRole = async (userId, newrole) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:3000/users/${userId}/update_role`,
+        `/api/users/${userId}/update_role`,
         {
           method: "PATCH",
           headers: {

@@ -374,7 +374,7 @@ const Sidenav = () => {
       const fetchImages = async () => {
         try {
           //setIsLoading(true);
-          const response = await fetch(`http://127.0.0.1:3000/images/${currentuser.id}/client_images`, {
+          const response = await fetch(`/api/images/${currentuser.id}/client_images`, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
           });
