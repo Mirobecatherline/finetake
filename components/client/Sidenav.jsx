@@ -243,7 +243,7 @@ const Sidenav = () => {
     // { name: 'Dashboard', Link: '/', icon: MdDashboard },
     // { name: 'Messages', Link: '/', icon: FiMessageSquare },
     // { name: 'My Account', Link: '/', icon: AiOutlineUser },
-    // { name: 'Home', Link: '/', icon: FaHome },
+    { name: 'Home', Link: '/', icon: FaHome },
     // { name: 'Analytics', Link: '/', icon: MdAnalytics },
     // { name: 'Settings', Link: '/', icon: MdSettings },
     { name: 'Mode', Link: '#', icon: MdDarkMode },
